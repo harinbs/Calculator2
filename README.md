@@ -28,4 +28,4 @@ The following diagram illustrates the structure of the app:
 ## Setup and Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/calculator-app.git
+   git clone https://github.com/harinbs/Calculator2.git
