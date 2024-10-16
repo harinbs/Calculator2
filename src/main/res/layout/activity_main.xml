@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calculator_background"
+    android:padding="16dp">
+
+    <!-- Display -->
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:padding="10dp"
+        android:background="@drawable/display_background"
+        android:focusable="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Button Grid -->
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:alignmentMode="alignBounds"
+        android:layout_marginTop="10dp">
+
+        <!-- First Row (Memory Buttons) -->
+        <Button android:id="@+id/buttonMS" android:text="MS" style="@style/ButtonStyle.Function"/>
+        <Button android:id="@+id/buttonMR" android:text="MR" style="@style/ButtonStyle.Function"/>
+        <Button android:id="@+id/buttonMC" android:text="MC" style="@style/ButtonStyle.Function"/>
+        <Button android:id="@+id/buttonMplus" android:text="M+" style="@style/ButtonStyle.Function"/>
+
+        <!-- Second Row -->
+        <Button android:id="@+id/button7" android:text="7" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button8" android:text="8" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button9" android:text="9" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button_divide" android:text="/" style="@style/ButtonStyle.Operator"/>
+
+        <!-- Third Row -->
+        <Button android:id="@+id/button4" android:text="4" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button5" android:text="5" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button6" android:text="6" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button_multiply" android:text="*" style="@style/ButtonStyle.Operator"/>
+
+        <!-- Fourth Row -->
+        <Button android:id="@+id/button1" android:text="1" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button2" android:text="2" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button3" android:text="3" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button_minus" android:text="-" style="@style/ButtonStyle.Operator"/>
+
+        <!-- Fifth Row -->
+        <Button android:id="@+id/button0" android:text="0" style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button_dot" android:text="." style="@style/ButtonStyle.Number"/>
+        <Button android:id="@+id/button_percent" android:text="%" style="@style/ButtonStyle.Operator"/>
+        <Button android:id="@+id/button_plus" android:text="+" style="@style/ButtonStyle.Operator"/>
+
+        <!-- Sixth Row -->
+        <Button android:id="@+id/button_sqrt" android:text="√" style="@style/ButtonStyle.Function"/>
+        <Button android:id="@+id/button_clear" android:text="C" style="@style/ButtonStyle.Function"/>
+        <Button android:id="@+id/button_equal" android:text="=" style="@style/ButtonStyle.Operator"/>
+        <Button android:id="@+id/button_backspace" android:text="←" style="@style/ButtonStyle.Function"/>
+    </GridLayout>
+</RelativeLayout>
